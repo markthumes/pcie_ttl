@@ -1,0 +1,758 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Feb 22 12:19:19 2025
+# Process ID         : 189968
+# Current directory  : /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/synth_1
+# Command line       : vivado -log xilinx_pcie4_uscale_ep.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xilinx_pcie4_uscale_ep.tcl
+# Log file           : /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/synth_1/xilinx_pcie4_uscale_ep.vds
+# Journal file       : /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/synth_1/vivado.jou
+# Running On         : zen
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.1 LTS
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 155H
+# CPU Frequency      : 2000.000 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 16089 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20384 MB
+# Available Virtual  : 17351 MB
+#-----------------------------------------------------------
+source xilinx_pcie4_uscale_ep.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.srcs/utils_1/imports/synth_1/xilinx_pcie4_uscale_ep.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.srcs/utils_1/imports/synth_1/xilinx_pcie4_uscale_ep.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top xilinx_pcie4_uscale_ep -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 190006
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2609.914 ; gain = 133.688 ; free physical = 6319 ; free virtual = 14777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xilinx_pcie4_uscale_ep' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_ep.v:62]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/synth_1/.Xil/Vivado-189968-zen/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/synth_1/.Xil/Vivado-189968-zen/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/mark/software/amd/installed/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [/home/mark/software/amd/installed/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [/home/mark/software/amd/installed/Vivado/2024.2/scripts/rt/data/unisim_comp.v:76017]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (0#1) [/home/mark/software/amd/installed/Vivado/2024.2/scripts/rt/data/unisim_comp.v:76017]
+INFO: [Synth 8-6157] synthesizing module 'pcie4_uscale_plus_0' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/synth_1/.Xil/Vivado-189968-zen/realtime/pcie4_uscale_plus_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4_uscale_plus_0' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/synth_1/.Xil/Vivado-189968-zen/realtime/pcie4_uscale_plus_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pcie_app_uscale' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pcie_app_uscale.v:69]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [/home/mark/software/amd/installed/Vivado/2024.2/scripts/rt/data/unisim_comp.v:99428]
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (0#1) [/home/mark/software/amd/installed/Vivado/2024.2/scripts/rt/data/unisim_comp.v:99428]
+INFO: [Synth 8-6157] synthesizing module 'pio' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio.v:67]
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter AXISTEN_IF_WIDTH bound to: 2'b01 
+	Parameter AXISTEN_IF_RQ_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXISTEN_IF_CC_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXISTEN_IF_CQ_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXISTEN_IF_RC_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXI4_CQ_TUSER_WIDTH bound to: 88 - type: integer 
+	Parameter AXI4_CC_TUSER_WIDTH bound to: 33 - type: integer 
+	Parameter AXI4_RQ_TUSER_WIDTH bound to: 62 - type: integer 
+	Parameter AXI4_RC_TUSER_WIDTH bound to: 75 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_CLIENT_TAG bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_RQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CC_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_RC_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_MC_RX_STRADDLE bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_RX_MSG_INTFC bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_MSG_ROUTE bound to: 18'b101111111111111111 
+	Parameter C_DATA_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pio_ep' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_ep.v:62]
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter AXISTEN_IF_WIDTH bound to: 2'b01 
+	Parameter AXISTEN_IF_RQ_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXISTEN_IF_CC_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXISTEN_IF_CQ_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXISTEN_IF_RC_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXI4_CQ_TUSER_WIDTH bound to: 88 - type: integer 
+	Parameter AXI4_CC_TUSER_WIDTH bound to: 33 - type: integer 
+	Parameter AXI4_RQ_TUSER_WIDTH bound to: 62 - type: integer 
+	Parameter AXI4_RC_TUSER_WIDTH bound to: 75 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_CLIENT_TAG bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_RQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CC_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_RC_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_RX_MSG_INTFC bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_MSG_ROUTE bound to: 18'b101111111111111111 
+	Parameter C_DATA_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pio_ep_mem_access' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_ep_mem_access.v:70]
+	Parameter C_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter ADDR_W bound to: 7 - type: integer 
+	Parameter MEM_W bound to: 128 - type: integer 
+	Parameter BYTE_EN_W bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pio_ep_xpm_sdpram_wrap' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_ep_xpm_sdpram_wrap.sv:355]
+	Parameter MEM_W bound to: 128 - type: integer 
+	Parameter ADR_W bound to: 7 - type: integer 
+	Parameter WBE_W bound to: 16 - type: integer 
+	Parameter PAR_W bound to: 16 - type: integer 
+	Parameter ECC_ENABLE bound to: 0 - type: integer 
+	Parameter PARITY_ENABLE bound to: 0 - type: integer 
+	Parameter RDT_FFOUT bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/home/mark/software/amd/installed/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+	Parameter MEMORY_SIZE bound to: 1024 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter CLOCKING_MODE bound to: common_clock - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 8 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 7 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 7 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: read_first - type: string 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/home/mark/software/amd/installed/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [/home/mark/software/amd/installed/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:516]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/home/mark/software/amd/installed/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [/home/mark/software/amd/installed/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6155] done synthesizing module 'pio_ep_xpm_sdpram_wrap' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_ep_xpm_sdpram_wrap.sv:355]
+INFO: [Synth 8-6155] done synthesizing module 'pio_ep_mem_access' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_ep_mem_access.v:70]
+INFO: [Synth 8-6157] synthesizing module 'pio_rx_engine' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:63]
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter AXISTEN_IF_WIDTH bound to: 2'b01 
+	Parameter AXISTEN_IF_CQ_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXISTEN_IF_RC_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXISTEN_IF_RC_STRADDLE bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_RX_MSG_INTFC bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_RC_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_ENABLE_MSG_ROUTE bound to: 18'b101111111111111111 
+	Parameter AXI4_CQ_TUSER_WIDTH bound to: 88 - type: integer 
+	Parameter AXI4_RC_TUSER_WIDTH bound to: 75 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter ADDR_W bound to: 7 - type: integer 
+	Parameter MEM_W bound to: 128 - type: integer 
+	Parameter BYTE_EN_W bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:1367]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:1411]
+INFO: [Synth 8-6155] done synthesizing module 'pio_rx_engine' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:63]
+INFO: [Synth 8-6157] synthesizing module 'pio_tx_engine' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_tx_engine.v:61]
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter AXISTEN_IF_WIDTH bound to: 2'b01 
+	Parameter AXI4_CC_TUSER_WIDTH bound to: 33 - type: integer 
+	Parameter AXI4_RQ_TUSER_WIDTH bound to: 62 - type: integer 
+	Parameter AXISTEN_IF_RQ_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXISTEN_IF_CC_ALIGNMENT_MODE bound to: FALSE - type: string 
+	Parameter AXISTEN_IF_ENABLE_CLIENT_TAG bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_RQ_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter AXISTEN_IF_CC_PARITY_CHECK bound to: 0 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter ADDR_W bound to: 7 - type: integer 
+	Parameter MEM_W bound to: 128 - type: integer 
+	Parameter BYTE_EN_W bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_tx_engine.v:2583]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_tx_engine.v:2222]
+INFO: [Synth 8-6155] done synthesizing module 'pio_tx_engine' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_tx_engine.v:61]
+INFO: [Synth 8-6157] synthesizing module 'pio_intr_ctrl' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_intr_ctrl.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'pio_intr_ctrl' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_intr_ctrl.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'pio_ep' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_ep.v:62]
+INFO: [Synth 8-6157] synthesizing module 'pio_to_ctrl' [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_to_ctrl.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'pio_to_ctrl' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_to_ctrl.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'pio' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_app_uscale' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pcie_app_uscale.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'xilinx_pcie4_uscale_ep' (0#1) [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_ep.v:62]
+WARNING: [Synth 8-6014] Unused sequential element sop_qq_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_ep_mem_access.v:140]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.data_start_loc_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:959]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.req_snoop_latency_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:964]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.req_no_snoop_latency_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:965]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.req_obff_code_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:966]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.req_msg_code_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:967]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.req_msg_route_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:968]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.req_dst_id_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:969]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.req_vend_id_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:970]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.req_vend_hdr_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:971]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.req_tl_hdr_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:972]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.m_axis_cq_tparity_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:983]
+WARNING: [Synth 8-6014] Unused sequential element pio_rx_sm_128_dword_aligned.m_axis_cq_tparity_q_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:984]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_cq_tdata_q_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:263]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_cq_tuser_reg_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_rx_engine.v:264]
+WARNING: [Synth 8-6014] Unused sequential element pio_tx_sm_128.rd_data_ready_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_tx_engine.v:493]
+WARNING: [Synth 8-6014] Unused sequential element dword_count_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_tx_engine.v:2215]
+WARNING: [Synth 8-6014] Unused sequential element req_compl_wd_qqqqq_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_tx_engine.v:1044]
+WARNING: [Synth 8-6014] Unused sequential element tkeep_qq_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_tx_engine.v:1053]
+WARNING: [Synth 8-6014] Unused sequential element lower_addr_qq_reg was removed.  [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/pio_tx_engine.v:1054]
+WARNING: [Synth 8-7129] Port cfg_interrupt_sent in module pio_intr_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_msg_transmit_done in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_tag[5] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_tag[4] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_tag[3] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_tag[2] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_tag[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_tag[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_tag_vld in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_tfc_nph_av[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_tfc_nph_av[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_tfc_npd_av[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_tfc_npd_av[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_tfc_np_pl_empty in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_seq_num[3] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_seq_num[2] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_seq_num[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_seq_num[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcie_rq_seq_num_vld in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_ph[7] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_ph[6] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_ph[5] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_ph[4] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_ph[3] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_ph[2] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_ph[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_ph[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_nph[7] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_nph[6] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_nph[5] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_nph[4] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_nph[3] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_nph[2] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_nph[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_nph[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cplh[7] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cplh[6] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cplh[5] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cplh[4] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cplh[3] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cplh[2] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cplh[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cplh[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[11] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[10] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[9] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[8] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[7] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[6] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[5] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[4] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[3] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[2] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_pd[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[11] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[10] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[9] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[8] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[7] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[6] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[5] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[4] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[3] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[2] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_npd[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[11] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[10] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[9] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[8] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[7] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[6] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[5] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[4] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[3] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[2] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_fc_cpld[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_td in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_ep in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[10] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[9] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[8] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[7] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[6] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[5] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[4] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[3] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[2] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_len[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_addr[12] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_addr[11] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_addr[1] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_addr[0] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port completer_id[15] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port completer_id[14] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port completer_id[13] in module pio_tx_engine is either unconnected or has no load
+WARNING: [Synth 8-7129] Port completer_id[12] in module pio_tx_engine is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2709.883 ; gain = 233.656 ; free physical = 6190 ; free virtual = 14650
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2715.820 ; gain = 239.594 ; free physical = 6190 ; free virtual = 14650
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2715.820 ; gain = 239.594 ; free physical = 6190 ; free virtual = 14650
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2726.789 ; gain = 0.000 ; free physical = 6190 ; free virtual = 14650
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc] for cell 'pcie4_uscale_plus_0_i'
+Finished Parsing XDC File [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc] for cell 'pcie4_uscale_plus_0_i'
+Parsing XDC File [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mem_clk_inst'
+Finished Parsing XDC File [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mem_clk_inst'
+Parsing XDC File [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_plus_x0y0.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_rst_n'. [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_plus_x0y0.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'sys_rst_n'. [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_plus_x0y0.xdc:90]
+WARNING: [Vivado 12-508] No pins matched '*'. [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_plus_x0y0.xdc:156]
+WARNING: [Vivado 12-508] No pins matched '*'. [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_plus_x0y0.xdc:159]
+WARNING: [Vivado 12-508] No pins matched 'pcie4_uscale_plus_0_i/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O'. [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_plus_x0y0.xdc:176]
+Finished Parsing XDC File [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_plus_x0y0.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_plus_x0y0.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/xilinx_pcie4_uscale_ep_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/imports/xilinx_pcie4_uscale_plus_x0y0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xilinx_pcie4_uscale_ep_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xilinx_pcie4_uscale_ep_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mark/software/amd/installed/Vivado/2024.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xilinx_pcie4_uscale_ep_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xilinx_pcie4_uscale_ep_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 16 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2853.691 ; gain = 0.000 ; free physical = 6207 ; free virtual = 14666
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2853.691 ; gain = 0.000 ; free physical = 6207 ; free virtual = 14666
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2853.691 ; gain = 377.465 ; free physical = 6229 ; free virtual = 14689
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2861.695 ; gain = 385.469 ; free physical = 6229 ; free virtual = 14689
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[0]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[0]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[1]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[1]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[2]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[2]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[3]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[3]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[0]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[0]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[1]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[1]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[2]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[2]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[3]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[3]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[0]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[0]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[1]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[1]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[2]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[2]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[3]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[3]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[0]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[0]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[1]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[1]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[2]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[2]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[3]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[3]. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_300MHz_n. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_300MHz_n. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_300MHz_p. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_300MHz_p. (constraint file  /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie4_uscale_plus_0_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mem_clk_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[10].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[11].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[12].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[13].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[14].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[15].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[2].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[3].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[4].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[5].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[6].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[7].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[8].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/\xpm_memory_sdpram_inst_loop[9].xpm_memory_sdpram_inst . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2861.695 ; gain = 385.469 ; free physical = 6229 ; free virtual = 14689
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'pio_rx_sm_128_dword_aligned.state_reg' in module 'pio_rx_engine'
+INFO: [Synth 8-802] inferred FSM for state register 'pio_tx_sm_128.rd_data_state_reg' in module 'pio_tx_engine'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'pio_tx_engine'
+INFO: [Synth 8-802] inferred FSM for state register 'cfg_interrupt_int_reg' in module 'pio_intr_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        PIO_RX_RST_STATE |                             0001 |                         00000000
+             PIO_RX_DATA |                             0010 |                         00000011
+          PIO_RX_DATA_WR |                             0100 |                         00000101
+       PIO_RX_WAIT_STATE |                             1000 |                         00000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pio_rx_sm_128_dword_aligned.state_reg' using encoding 'one-hot' in module 'pio_rx_engine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         PIO_RD_DATA_RST |                                0 |                               00
+        PIO_RD_DATA_WAIT |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pio_tx_sm_128.rd_data_state_reg' using encoding 'sequential' in module 'pio_tx_engine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        PIO_TX_RST_STATE |                          0000001 |                             0000
+         PIO_TX_COMPL_C1 |                          0000010 |                             0001
+      PIO_TX_COMPL_WD_C1 |                          0000100 |                             0011
+    PIO_TX_COMPL_WD_N_DW |                          0001000 |                             1111
+        PIO_TX_CPL_UR_C1 |                          0010000 |                             0110
+        PIO_TX_CPL_UR_C2 |                          0100000 |                             0111
+           PIO_TX_MRD_C1 |                          1000000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'pio_tx_engine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                             0000
+                  iSTATE |                                1 |                             0001
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cfg_interrupt_int_reg' using encoding 'sequential' in module 'pio_intr_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2861.695 ; gain = 385.469 ; free physical = 6236 ; free virtual = 14698
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 13    
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	              384 Bit    Registers := 2     
+	              256 Bit    Registers := 1     
+	              128 Bit    Registers := 3     
+	               96 Bit    Registers := 1     
+	               64 Bit    Registers := 3     
+	               62 Bit    Registers := 1     
+	               48 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 8     
+	                8 Bit    Registers := 22    
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 41    
++---RAMs : 
+	             1024 Bit	(128 X 8 bit)          RAMs := 16    
++---Muxes : 
+	   2 Input  384 Bit        Muxes := 4     
+	   4 Input  384 Bit        Muxes := 2     
+	   2 Input  352 Bit        Muxes := 1     
+	   4 Input  352 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 1     
+	   4 Input  256 Bit        Muxes := 2     
+	   2 Input  128 Bit        Muxes := 11    
+	   5 Input  128 Bit        Muxes := 4     
+	   4 Input  128 Bit        Muxes := 2     
+	   7 Input  128 Bit        Muxes := 2     
+	   2 Input   96 Bit        Muxes := 1     
+	   7 Input   96 Bit        Muxes := 1     
+	   5 Input   64 Bit        Muxes := 1     
+	   2 Input   48 Bit        Muxes := 2     
+	   4 Input   48 Bit        Muxes := 1     
+	   2 Input   44 Bit        Muxes := 1     
+	   4 Input   44 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 4     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 24    
+	  10 Input   11 Bit        Muxes := 1     
+	   4 Input   11 Bit        Muxes := 3     
+	   7 Input   11 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 2     
+	  20 Input    7 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	  10 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 46    
+	   4 Input    1 Bit        Muxes := 23    
+	   3 Input    1 Bit        Muxes := 8     
+	  11 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 13    
+	   5 Input    1 Bit        Muxes := 4     
+	   7 Input    1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2861.695 ; gain = 385.469 ; free physical = 6203 ; free virtual = 14673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                             | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3449.887 ; gain = 973.660 ; free physical = 5678 ; free virtual = 14148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3503.238 ; gain = 1027.012 ; free physical = 5631 ; free virtual = 14101
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                             | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
+|xpm_memory_sdpram:/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 128 x 8(WRITE_FIRST)   |   | R | 128 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 1               | 
++----------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[2].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[3].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[4].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[5].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[6].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[7].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[8].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[9].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[10].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[11].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[12].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[13].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[14].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance pcie_app_uscale_i/PIO_i/pio_ep/ep_mem/ep_xpm_sdpram/xpm_memory_sdpram_inst_loop[15].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 3511.246 ; gain = 1035.020 ; free physical = 5615 ; free virtual = 14085
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3646.059 ; gain = 1169.832 ; free physical = 5497 ; free virtual = 13967
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3646.059 ; gain = 1169.832 ; free physical = 5497 ; free virtual = 13967
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3646.059 ; gain = 1169.832 ; free physical = 5497 ; free virtual = 13967
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3646.059 ; gain = 1169.832 ; free physical = 5497 ; free virtual = 13967
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3646.059 ; gain = 1169.832 ; free physical = 5497 ; free virtual = 13967
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3646.059 ; gain = 1169.832 ; free physical = 5497 ; free virtual = 13967
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |clk_wiz_0           |         1|
+|2     |pcie4_uscale_plus_0 |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |clk_wiz           |     1|
+|2     |pcie4_uscale_plus |     1|
+|3     |CARRY8            |     6|
+|4     |IBUFDS_GTE4       |     1|
+|5     |LUT1              |     3|
+|6     |LUT2              |   232|
+|7     |LUT3              |   204|
+|8     |LUT4              |   199|
+|9     |LUT5              |   278|
+|10    |LUT6              |   920|
+|11    |MUXF7             |    32|
+|12    |MUXF8             |    16|
+|13    |RAMB18E2          |    16|
+|14    |FDCE              |   709|
+|15    |FDRE              |   966|
+|16    |FDSE              |     2|
+|17    |IBUF              |     1|
+|18    |OBUF              |     8|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3646.059 ; gain = 1169.832 ; free physical = 5497 ; free virtual = 13967
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 443 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3646.059 ; gain = 1031.961 ; free physical = 5497 ; free virtual = 13967
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3646.059 ; gain = 1169.832 ; free physical = 5497 ; free virtual = 13967
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3646.059 ; gain = 0.000 ; free physical = 5654 ; free virtual = 14124
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. sys_reset_n_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3646.059 ; gain = 0.000 ; free physical = 5659 ; free virtual = 14129
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3c8f386a
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:36 . Memory (MB): peak = 3646.059 ; gain = 2169.723 ; free physical = 5659 ; free virtual = 14129
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2812.248; main = 2812.248; forked = 268.213
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4123.176; main = 3628.258; forked = 916.996
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3652.266 ; gain = 0.000 ; free physical = 5659 ; free virtual = 14129
+INFO: [Common 17-1381] The checkpoint '/home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/synth_1/xilinx_pcie4_uscale_ep.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file xilinx_pcie4_uscale_ep_utilization_synth.rpt -pb xilinx_pcie4_uscale_ep_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 22 12:19:58 2025...

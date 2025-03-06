@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Feb 22 12:15:09 2025
+# Process ID         : 155644
+# Current directory  : /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/clk_wiz_0_synth_1
+# Command line       : vivado -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file           : /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file       : /home/mark/fpga/src/zcu106/pcie_led_ex_design/pcie4_uscale_plus_0_ex/pcie4_uscale_plus_0_ex.runs/clk_wiz_0_synth_1/vivado.jou
+# Running On         : zen
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.1 LTS
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 155H
+# CPU Frequency      : 2001.941 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 16089 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20384 MB
+# Available Virtual  : 17463 MB
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

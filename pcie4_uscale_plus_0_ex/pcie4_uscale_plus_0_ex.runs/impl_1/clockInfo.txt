@@ -1,0 +1,94 @@
+-------------------------------------
+| Tool Version : Vivado v.2024.2
+| Date         : Sat Feb 22 12:20:47 2025
+| Host         : zen
+| Design       : design_1
+| Device       : xczu7ev-ffvc1156-2-E-
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 9
+	Number of BUFGCE: 0
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 9
+	Number of BUFG_PS: 0
+	Number of BUFG_FABRIC: 0
+	Running suboptimal placement checker for 9 BUFG_GT clocks (and their loads)...
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+		No sub-optimality found
+	Running suboptimal placement checker for 8 clocks (and their loads) which do not have the CLOCK_LOW_FANOUT property but have a fanout less than 2000...
+Pre-CRP Checker took 0 secs
+
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: pcie4_uscale_plus_0_i/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/PHY_CORECLK
+	Clock source type: BUFG_GT
+	Clock source region: X3Y1
+	Clock regions with locked loads: X3Y0 
+	initial rect ((2, 0), (3, 3))
+
+Clock 2: pcie4_uscale_plus_0_i/inst/bufg_gt_sysclk_n_0
+	Clock source type: BUFG_GT
+	Clock source region: X3Y1
+	Clock regions with locked loads: X3Y1 
+	initial rect ((3, 0), (3, 1))
+
+Clock 3: pcie4_uscale_plus_0_i/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_PCLK2_GT
+	Clock source type: BUFG_GT
+	Clock source region: X3Y1
+	Clock regions with locked loads: X3Y0 X3Y1 
+	initial rect ((3, 0), (3, 1))
+
+Clock 4: pcie4_uscale_plus_0_i/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gthe4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X3Y1
+	initial rect ((3, 1), (3, 1))
+
+Clock 5: pcie4_uscale_plus_0_i/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gthe4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X3Y1
+	initial rect ((3, 1), (3, 1))
+
+Clock 6: pcie4_uscale_plus_0_i/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gthe4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X3Y1
+	initial rect ((3, 1), (3, 1))
+
+Clock 7: pcie4_uscale_plus_0_i/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gthe4_cpll_cal_tx_i/txoutclkmon
+	Clock source type: BUFG_GT
+	Clock source region: X3Y1
+	initial rect ((3, 1), (3, 1))
+
+Clock 8: pcie4_uscale_plus_0_i/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_INTCLK
+	Clock source type: BUFG_GT
+	Clock source region: X3Y1
+	initial rect ((3, 1), (3, 1))
+
+Clock 9: pcie4_uscale_plus_0_i/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/PHY_MCAPCLK
+	Clock source type: BUFG_GT
+	Clock source region: X3Y1
+	Clock regions with locked loads: X3Y0 
+	initial rect ((3, 0), (3, 1))
+
+
+
+*****************
+User Constraints:
+*****************
+No user constraints found
+
+
